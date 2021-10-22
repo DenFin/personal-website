@@ -1,0 +1,28 @@
+.container
+    margin: 0 auto
+    max-width: 1600px
+
+.row
+    display: flex
+    flex-wrap: wrap
+    padding: 0 2rem
+
+[class*="col-"]
+    padding: 0 2rem
+
+.col-xs-12
+    width: 100%
+
+@media($smallDevices)
+    .row
+        flex-direction: column
+    
+@media($tabletL)
+    .col-md-6
+        flex-basis: 50%
+        max-width: 50%
+
+@media($laptopL)
+    .col-lg-6
+        flex-basis: 50%
+        max-width: 50%

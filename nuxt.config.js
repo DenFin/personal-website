@@ -12,7 +12,8 @@ export default {
             { name: 'format-detection', content: 'telephone=no' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: 'stylesheet', href: "static/css/style.css" }
         ]
     },
 
@@ -27,15 +28,18 @@ export default {
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-        '@nuxtjs/style-resources'
+        '@nuxtjs/style-resources',
+        'nuxt-gsap-module'
     ],
     styleResources: {
         sass: ['~/assets/sass/index.sass']
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: ['@nuxtjs/axios'],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {}
+    build: {
+        transpile: ["gsap"]
+    }
 }

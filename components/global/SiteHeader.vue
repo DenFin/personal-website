@@ -16,6 +16,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="sass">
+.site__header
+    padding: 2rem 0
+    position: absolute
+    width: 100%
+.site-title
+    font-size: 2.4rem
 </style>

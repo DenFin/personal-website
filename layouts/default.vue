@@ -1,6 +1,18 @@
 <template>
-  <Nuxt />
+  <div>
+      <site-header></site-header>
+      <Nuxt />
+    </div>
 </template>
+<script>
+import SiteHeader from "./../components/global/SiteHeader.vue"
+
+export default{
+  components: {
+      SiteHeader
+  }
+}
+</script>
 
 <style lang="sass">
 html
