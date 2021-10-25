@@ -4,7 +4,6 @@
     "private": true,
     "scripts": {
         "dev": "nuxt",
-        "sass": "sass --watch assets/sass/index.sass:static/css/style.css",
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate"
