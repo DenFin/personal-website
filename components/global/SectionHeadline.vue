@@ -29,6 +29,7 @@ export default {
     font-size: 4.2rem
     position: relative
     display: inline-block
+    margin-bottom: 10rem
 
     &::after
         content: ''
@@ -41,6 +42,10 @@ export default {
 .red
     &::after
         background: $red
+
+.turqoise
+    &::after
+        background: $turqoise
 
 
 .large

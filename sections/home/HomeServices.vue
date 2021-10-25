@@ -7,9 +7,24 @@
               </div>
           </div>
           <div class="row">
-            <div v-for="service in services.data" :key="service.id" class="col-xs-12 col-lg-10">
-              <h3 v-html="service.title.rendered"></h3>
-            </div>
+            <service-item 
+              title="Technische Beratung & Konzeption"
+              description="Mein Steckenpferd ist das interdisziplinäre Arbeiten. Daher beginnt ein Projekt für mich immer mit dem Erarbeiten von Anfoderungen an das gewünschte Produkt und ein darauf aufbauendes nachhaltiges Konzept."
+              icon="consulting"
+              >
+            </service-item>
+            <service-item 
+              title="Programmierung individueller Websites und Apps"
+              description="Kleine Microsite, Multisite mit CMS oder lieber ein Newsletter? Mit Hilfe von neuesten Technologien entwickle ich responsive Websites, die nicht nur schön anzusehen sind sondern technisch auch auf der Höhe der Zeit sind."
+              icon="programming"
+              >
+            </service-item>
+            <service-item 
+              title="Workshops und Schulungen"
+              description="Eine gute Website ist nie fertig. Sie sollte stetig mit neuen Inhalten befüllt werden. Bei Bedarf erhalten Sie Schulungen über Content Management Systeme und Newsletter Tools, so dass Sie ihren Content eigenständig eintragen können."
+              icon="workshops"
+              >
+            </service-item>
           </div>
       </div>
   </section>
@@ -17,9 +32,13 @@
 
 <script>
 import axios from 'axios'
-import SectionHeadline from '../../components/global/SectionHeadline.vue'
+import SectionHeadline from '../../components/global/SectionHeadline'
+import ServiceItem from '../../components/services/ServiceItem'
 export default {
-  components: { SectionHeadline },
+  components: {
+     SectionHeadline,
+     ServiceItem
+    },
   data(){
     return {
       services: []
@@ -32,6 +51,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass" scoped>
+.row
+  display: block
 
+  &:nth-of-type(2)
+      margin-left: 15%
+
+.col-xs-12
+  &:nth-of-type(1)
+    margin-left: auto
+    margin-right: 15%
+
+  &:nth-of-type(3)
+    margin: 0 auto
 </style>

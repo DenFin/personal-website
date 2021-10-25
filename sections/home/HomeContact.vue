@@ -10,6 +10,12 @@ Sie brauchen eine Website oder Landingpage oder haben ein anderes Projekt, dass 
                   </p>
               </div>
           </div>
+          <div class="arrow">
+        <svg width="215" height="208" viewBox="0 0 215 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M182.324 43.4637L200.696 176.314L67.8462 194.685" stroke="#FF4365" stroke-width="25" stroke-miterlimit="10"/>
+            <path d="M132.85 6.01059L151.221 138.86L18.3716 157.232" stroke="#FF4365" stroke-width="25" stroke-miterlimit="10"/>
+        </svg>
+      </div>
       </div>
   </section>
 </template>
@@ -22,6 +28,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass" scoped>
+#contact
+  position: relative
+  .arrow
+    position: absolute
+    right: 10%
+    bottom: 0
+    transform: rotate(180deg)
+    
+.section-headline
+  margin-bottom: 2rem
+
+.col-lg-6
+  margin: 0 auto
 
 </style>

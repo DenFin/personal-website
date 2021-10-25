@@ -5,11 +5,9 @@
               <div class="col-xs-12 col-md-6 col-lg-6 d-flex align-center">
                   <div>
                     <h1>
-                    Hi ich bin Dennis. Webentwickler und 
-                    Frontend Entwickler 
-                    aus Köln.
+                    Über mich
                     </h1>
-                    <nuxt-link class="link" to="/#about">Mehr erfahren</nuxt-link>
+                    <p>Ausgebildeter Mediengestalter und autodidaktischer Webentwickler. Zur Programmierung kam ich, weil ich Websites nicht nur gestalten, sondern ihnen auch Leben einhauchen wollte. <strong>Responsive Design</strong>, <strong>CSS3 Animationen</strong> und <strong>jQuery</strong> Plugins waren von Anfang an mit dabei. <br><br> Sehr schnell fand ich auch zur <strong>WordPress</strong> Entwicklung, um Kunden die Möglichkeit zu geben ihre Inhalte selber zu pflegen. Hierbei habe ich in der Regel <strong>eigene Themes</strong> entwickelt und auch nie auf CSS Frameworks zurück gegriffen, weswegen ich heute ein sehr tiefes Verständnis von CSS habe.</p>
                   </div>
               </div>
           </div>
@@ -175,37 +173,17 @@ export default {
     display: flex
     align-items: center
 
-    &::after
-        position: absolute  
-        content: ''
-        display: block
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        background: 
-            image: url('/img/dennisfink_bg_pattern.svg')
-            size: cover
-
-    .container
-        z-index: 1
-
     h1
         margin: 0
-
-    a
-        margin-top: 20px
-        margin-left: 5px
-        display: block
 
     .arrow
         position: absolute
         &-1
-            top: 100px
-            left: 30%
+            top: 0px
+            left: 20%
 
         &-2
-            bottom: 100px
+            bottom: 200px
             left: 50%
             z-index: -1
 
