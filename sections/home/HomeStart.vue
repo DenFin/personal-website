@@ -200,6 +200,8 @@ export default {
 
     .arrow
         position: absolute
+        @media($smallDevices)
+            display: none 
         &-1
             top: 100px
             left: 30%

@@ -32,8 +32,10 @@ export default {
 
 <style lang="sass">
 .service-item
-    display: flex
-    margin-bottom: 8rem
+    margin-bottom: 4rem
+    @media($laptop) 
+        display: flex
+        margin-bottom: 8rem
 
     .icon
         width: 180px

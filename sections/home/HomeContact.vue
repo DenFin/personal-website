@@ -36,6 +36,8 @@ export default {
     right: 10%
     bottom: 0
     transform: rotate(180deg)
+    @media($smallDevices)
+      display: none
     
 .section-headline
   margin-bottom: 2rem

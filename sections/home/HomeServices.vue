@@ -54,9 +54,9 @@ export default {
 <style lang="sass" scoped>
 .row
   display: block
-
-  &:nth-of-type(2)
-      margin-left: 15%
+  @media($laptop) 
+    &:nth-of-type(2)
+        margin-left: 15%
 
 .col-xs-12
   &:nth-of-type(1)

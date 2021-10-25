@@ -20,12 +20,12 @@ export default {
 
 <style lang="sass">
 .work-item
-   
-    &:nth-of-type(2)
-        margin-top: 300px
-    &:nth-of-type(3)
-        margin-top: -200px
-        margin-left: 200px
+    @media($laptop)   
+      &:nth-of-type(2)
+          margin-top: 300px
+      &:nth-of-type(3)
+          margin-top: -200px
+          margin-left: 200px
 
     figure
       position: relative
@@ -51,8 +51,9 @@ export default {
         color: $white
 
     figure
-        max-width: 500px
-        height: 500px
+        @media($laptop) 
+          max-width: 500px
+          height: 500px
     img
         object-fit: cover
         height: 100%
