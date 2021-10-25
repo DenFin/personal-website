@@ -18,8 +18,5 @@
         "nuxt": "^2.15.7",
         "sass-loader": "^10.1.1",
         "splitting": "^1.0.6"
-    },
-    "devDependencies": {
-        "nuxt-gsap-module": "^1.5.0"
     }
 }
