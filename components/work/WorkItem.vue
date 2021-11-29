@@ -3,7 +3,7 @@
     <figure v-if="work.ACF.image" >
       <img :src="work.ACF.image.url" :alt="work.ACF.image.alt">
       <div class="work-item__overlay">
-        <a target="_blank" :src="work.ACF.image.url">Zur Website</a>
+        <a target="_blank" :href="work.ACF.link">Zur Website</a>
       </div>
       </figure>
       <h3>{{ work.title.rendered }}</h3>

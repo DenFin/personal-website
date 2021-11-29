@@ -183,9 +183,12 @@ export default {
         left: 0
         right: 0
         bottom: 0
+        z-index: -2
         background: 
-            image: url('/img/dennisfink_bg_pattern.svg')
+            image: url('/img/home/bg_pattern.jpg')
             size: cover
+            position: center 50vh
+            repeat: no-repeat
 
     .container
         z-index: 1

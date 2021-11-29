@@ -1,18 +1,27 @@
 <template>
   <div>
-      <site-header></site-header>
+      <site-header @toggle-menu="toggleMenu"></site-header>
       <Nuxt />
       <site-footer></site-footer>
+      <menu-overlay></menu-overlay>
     </div>
 </template>
 <script>
 import SiteHeader from "./../components/global/SiteHeader"
 import SiteFooter from "./../components/global/SiteFooter"
+import MenuOverlay from "./../components/global/MenuOverlay"
 
 export default{
   components: {
       SiteHeader,
-      SiteFooter
+      SiteFooter,
+      MenuOverlay
+  },
+  methods: {
+    toggleMenu(){
+      document.querySelector('.hamburger').classList.toggle('opened')
+      document.querySelector('.menuOverlay').classList.toggle('is-active')
+    }
   }
 }
 </script>

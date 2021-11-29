@@ -6,7 +6,7 @@
                   <div class="d-flex justify-space-between">
                       <nuxt-link class="site-title" to="/"><strong >Dennis Fink</strong></nuxt-link>
                     <div>
-                        <button @click="toggleHamburger" class="hamburger" aria-label="Main Menu">
+                        <button @click.stop="toggleMenu" class="hamburger" aria-label="Main Menu">
                         <svg width="100" height="100" viewBox="0 0 100 100">
                         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                         <path class="line line2" d="M 20,50 H 80" />
@@ -25,8 +25,8 @@
 
 export default {
     methods: {
-        toggleHamburger($event){
-            document.querySelector('.hamburger').classList.toggle('opened')
+        toggleMenu(){
+            this.$emit('toggle-menu')
         }
     }
 }
@@ -37,7 +37,7 @@ export default {
     padding: 2rem 0
     position: absolute
     width: 100%
-    z-index: 2
+    z-index: 10
 .site-title
     color: inherit
     font-size: 2.4rem
@@ -49,6 +49,8 @@ export default {
   cursor: pointer
   display: flex
   padding: 0
+  position: relative
+  z-index: 999
 
   svg
     width: 50px
@@ -58,7 +60,7 @@ export default {
   fill: none
   stroke: black
   stroke-width: 6
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .line1
   stroke-dasharray: 60 207
