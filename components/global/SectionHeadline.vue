@@ -28,7 +28,7 @@ export default {
     font-weight: 700
     position: relative
     display: inline-block
-    margin-bottom: 10rem
+    margin-bottom: 4rem
 
     &::after
         content: ''
@@ -37,6 +37,9 @@ export default {
         bottom: -10px
         height: 10px
         width: 100%
+
+    @media(min-width: 769px)
+        margin-bottom: 6rem
 
 .red
     &::after

@@ -1,25 +1,37 @@
 <template>
   <div class="menuOverlay no-animation">
-      <nav>
-          <ul>
-              <li><a @click="closeMenu" href="#start">Start</a></li>
-              <li><a @click="closeMenu" href="#about">About</a></li>
-              <li><a @click="closeMenu" href="#work">Work</a></li>
-              <li><a @click="closeMenu" href="#contact">Contact</a></li>
-          </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li><a
+            @click="closeMenu"
+            href="#start"
+          >Start</a></li>
+        <li><a
+            @click="closeMenu"
+            href="#about"
+          >About</a></li>
+        <li><a
+            @click="closeMenu"
+            href="#work"
+          >Work</a></li>
+        <li><a
+            @click="closeMenu"
+            href="#contact"
+          >Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
-    methods: {
-        closeMenu(){
-            document.querySelector('.hamburger').classList.remove('opened')
-            document.querySelector('.menuOverlay').classList.remove('is-active')
-        }
-    }
-}
+  methods: {
+    closeMenu() {
+      document.querySelector(".hamburger").classList.remove("opened");
+      document.querySelector(".menuOverlay").classList.remove("is-active");
+    },
+  },
+};
 </script>
 
 <style lang="sass" scoped>
@@ -49,7 +61,19 @@ export default {
         opacity: 1
         pointer-events: all
         transform: translateX(0)
-        transition: transform .75s ease, opacity .75s ease
+        transition: transform .75s ease, opacity .25s ease
+        li
+            transform: translateX(-100%)
+            animation:
+                name: slideIn
+                duration: 700ms
+                fill-mode: forwards
+                timing-function: ease
+
+            @for $i from 1 through 4
+                &:nth-of-type(#{$i})
+                    animation:
+                        delay: (150ms * $i) - 150
 
     ul
         margin: 0
@@ -67,6 +91,9 @@ export default {
         padding: 1rem
         display: block
 
-    
-
+@keyframes slideIn
+    from
+        transform: translateX(-100%)
+    to
+        transform: translateX(0)
 </style>

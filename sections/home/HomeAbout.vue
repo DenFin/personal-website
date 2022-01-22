@@ -16,16 +16,8 @@
         <div class="col-xs-12 col-lg-6">
 
           <p class="text-large">8 Jahre Erfahrung im Konzipieren und Umsetzen von responsiven Websites für Unternehmen unterschiedlichster Größe. Zur Zeit beschäftige mich mit der Entwicklung von reaktiven Javascript Anwendungen mit <strong>Vue.js</strong> und <strong>Nuxt.js</strong> und serverseitigen Anwendungen mit <strong>Node.js</strong></p>
-          <!-- <nuxt-link class="link" to="/about">>>Mehr erfahren</nuxt-link><br>
-                  <nuxt-link class="link" to="/">>> Lebenslauf</nuxt-link> -->
         </div>
-        <!-- <div class="col-xs-12 col-lg-6">
-          Diese Website wurde mit <strong>Nuxt.js</strong> und der <strong>WordPress REST API</strong> entwickelt. Erfahren Sie hier mehr über den Entstehungsprozess.
-          <nuxt-link
-            class="link"
-            to="/articles/nuxt-wordpress-api-website"
-          >Mehr erfahren</nuxt-link>
-        </div> -->
+
         <div class="col-xs-12 col-lg-6">
           <h2>Stationen der letzten Jahre</h2>
           <base-milestone
@@ -51,27 +43,37 @@ export default {
         {
           id: "freelance-frontend-developer",
           title: "Freelance Frontend Developer",
-          time: "09/2017 - heute",
+          time: "10/2017 <span>-</span> heute",
+          description:
+            "Konzeption, Umsetzung und Betreuung von Firmenwebsites und E-Mail Newslettern für Unternehmen, Agenturen und Selbstständige",
         },
         {
           id: "freelance-web-developer-strokecoach",
           title: "Freelance Webentwickler Strokecoach",
           time: "05/2021 - heute",
+          description:
+            "Konzeption, Entwicklung, Umsetzung und Betreuung einer barriefreien Multisite mit Contao",
         },
         {
           id: "freelance-web-developer-ynfinite",
           title: "Freelance Frontend Entwickler Ynfinite",
           time: "03/2020 - 04/2021",
+          description:
+            "Programmierung von Websites im hauseigenen CMS Ynfinite, Templateerstellung mit Twig ",
         },
         {
           id: "freelance-web-developer-köpu",
           title: "Freelance Web Developer KÖNIGSPUNKT",
           time: "10/2017 - 02/2020",
+          description:
+            "Konzeption, Umsetzung und Betreuung von Firmenwebsites und E-Mail Newslettern",
         },
         {
           id: "designer-entwickler-köpu",
           title: "Designer & Frontend Entwickler KÖNIGSPUNKT",
           time: "01/2013 - 09/2017",
+          description:
+            "Konzeption, Gestaltung, Umsetzung und Betreuung von Firmenwebsites und E-Mail Newslettern",
         },
         // {
         //   id: "ausbildung-köpu",
@@ -94,5 +96,13 @@ export default {
   padding: 12rem 0
 
 .text-large
-  font-size: 2.4rem
+  font-size: 2rem
+
+  @media(min-width: 769px)
+    font-size: 2.4rem
+    line-height: 1.8
+
+h2
+  @media(max-width: 768px)
+    margin-top: 6rem
 </style>

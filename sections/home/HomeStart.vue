@@ -172,6 +172,7 @@ export default {
     parallax() {
       gsap.to(".arrow-1", {
         ease: "none",
+        yPercent: -125,
         scrollTrigger: {
           trigger: "#start",
           start: "center center",
@@ -182,12 +183,12 @@ export default {
 
       gsap.to(".arrow-2", {
         ease: "none",
+        yPercent: -25,
         scrollTrigger: {
           trigger: "#start",
           start: "center center",
           scrub: true,
         },
-        y: 400,
       });
     },
   },
