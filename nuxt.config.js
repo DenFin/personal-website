@@ -28,10 +28,16 @@ export default {
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-        '@nuxtjs/style-resources'
+        '@nuxtjs/style-resources',
+        '@nuxtjs/google-fonts'
     ],
     styleResources: {
         sass: ['~/assets/sass/index.sass']
+    },
+    googleFonts: {
+        Poppins: {
+            wght: [300, 700]
+        },
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules

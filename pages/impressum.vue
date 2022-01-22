@@ -5,7 +5,7 @@
                 <div class="col-xs-12 col-lg-6">
                 <h1>Impressum</h1>
                 <h2>Angaben gemäß § 5 TMG:</h2>
-                <p>Dennis Fink<br> Webdesigner &amp; Frontend Entwickler<br> Remscheider Straße 71<br> 51103 Köln
+                <p>Dennis Fink<br> Webdesigner &amp; Frontend Entwickler<br> Lüttringhauser Straße 53<br> 51103 Köln
                     <br> <a href="mailto:kontakt@dennisfink.de">kontakt@dennisfink.de</a>
                 </p>
                 <br>
