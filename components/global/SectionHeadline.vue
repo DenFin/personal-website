@@ -4,29 +4,28 @@
 
 <script>
 export default {
-    props: ['headline', 'color', 'border', 'size'],
-    computed: {
-        headlineClasses(){
-            const classes = 'section-headline'
-            if(this.color === 'turqoise') {
-                return classes + ' turqoise'
-            } else if(this.color === 'red') {
-                return classes + ' red'
-            } 
+  props: ["headline", "color", "border", "size"],
+  computed: {
+    headlineClasses() {
+      const classes = "section-headline";
+      if (this.color === "turqoise") {
+        return classes + " turqoise";
+      } else if (this.color === "red") {
+        return classes + " red";
+      }
 
-
-            if(this.size === 'large') {
-                return classes + ' large'
-            }
-
-        }
-    }
-}
+      if (this.size === "large") {
+        return classes + " large";
+      }
+    },
+  },
+};
 </script>
 
 <style lang="sass">
 .section-headline
     font-size: 4.2rem
+    font-weight: 700
     position: relative
     display: inline-block
     margin-bottom: 10rem
@@ -47,8 +46,6 @@ export default {
     &::after
         background: $turqoise
 
-
 .large
     font-size: 5.4rem
-
 </style>

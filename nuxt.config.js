@@ -35,9 +35,9 @@ export default {
         sass: ['~/assets/sass/index.sass']
     },
     googleFonts: {
-        Poppins: {
-            wght: [300, 700]
-        },
+        families: {
+            Poppins: [400, 700]
+        }
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules
