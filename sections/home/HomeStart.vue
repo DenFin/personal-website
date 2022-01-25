@@ -7,11 +7,11 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 col-lg-6 d-flex align-center">
           <div>
+            <p class="intro">Hi, ich bin Dennis 👋 </p>
             <h1>
-              Hi ich bin Dennis. Webentwickler und
-              Frontend Entwickler
-              aus Köln.
+              Als ausgebildeter <span class="text-red">Mediengestalter</span> und autodidaktischer <span class="text-turqoise">Programmierer</span> entwickle ich moderne Websites und Apps.
             </h1>
+            <p>Neben den üblichen Verdächtigen HTML, CSS und Javascript arbeite ich gerne mit Vue.js und Nuxt.js. Das Erlernen von neuen Technologien reizt mich auch nach fast 10 Jahren Erfahrung imer noch.</p>
             <nuxt-link
               class="link"
               to="/#about"
@@ -79,7 +79,7 @@ if (process.client) {
 
 export default {
   mounted() {
-    this.revealText();
+    // this.revealText();
     this.parallax();
   },
   methods: {
@@ -197,62 +197,51 @@ export default {
 
 <style lang="sass">
 #start
-    background:
-        image: url('/img/home/dennisfink_portrait.png')
-        position: 0px 0px
-        repeat: no-repeat
-        size: 85vh
-    height: 100vh
-    overflow: hidden
-    position: relative
+  background:
+    image: url('/img/home/dennisfink_portrait.png')
+    position: bottom center
+    repeat: no-repeat
+    size: 80vh
+  height: 100vh
+  overflow: hidden
+  position: relative
 
-    display: flex
-    align-items: center
+  display: flex
+  align-items: center
 
-    &::after
-        position: absolute
-        content: ''
-        display: block
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        z-index: -2
-        background:
-            image: url('/img/home/bg_pattern.jpg')
-            size: cover
-            position: center 50vh
-            repeat: no-repeat
+  .container
+    z-index: 1
 
-    .container
-        z-index: 1
+  .intro, h1, p
+    margin-bottom: 3rem
 
-    h1
-        font-weight: 700
-        margin: 0
-        span
-            font-weight: 700
+  h1
+    font-weight: 700
+    // margin: 0
+    span
+      font-weight: 700
 
-    a
-        margin-top: 20px
-        margin-left: 5px
-        display: block
+  a
+    margin-top: 20px
+    // margin-left: 5px
+    display: block
 
-    .arrow
-        position: absolute
-        @media($smallDevices)
-            display: none
-        &-1
-            top: 100px
-            left: 30%
+  .arrow
+    display: none
+    position: absolute
+    @media($smallDevices)
+      display: none
+      &-1
+        top: 100px
+        left: 30%
 
-        &-2
-            bottom: 100px
-            left: 50%
-            z-index: -1
+      &-2
+        bottom: 100px
+        left: 50%
+        z-index: -1
 
 @media($laptop)
-    #start
-        background:
-            position: bottom right
+  #start
+    background:
+      position: bottom right
 </style>

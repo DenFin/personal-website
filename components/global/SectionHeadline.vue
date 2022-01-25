@@ -24,31 +24,27 @@ export default {
 
 <style lang="sass">
 .section-headline
-    font-size: 4.2rem
-    font-weight: 700
-    position: relative
-    display: inline-block
-    margin-bottom: 4rem
+  font-weight: 700
+  position: relative
+  display: inline-block
+  margin-bottom: 4rem
 
-    &::after
-        content: ''
-        display: block
-        position: absolute
-        bottom: -10px
-        height: 10px
-        width: 100%
-
-    @media(min-width: 769px)
-        margin-bottom: 6rem
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    bottom: -10px
+    height: 7px
+    width: 100%
 
 .red
-    &::after
-        background: $red
+  &::after
+    background: $red
 
 .turqoise
-    &::after
-        background: $turqoise
+  &::after
+    background: $turqoise
 
 .large
-    font-size: 5.4rem
+  font-size: 5.4rem
 </style>
