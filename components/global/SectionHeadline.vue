@@ -28,6 +28,7 @@ export default {
   position: relative
   display: inline-block
   margin-bottom: 4rem
+  line-height: 1.2
 
   &::after
     content: ''

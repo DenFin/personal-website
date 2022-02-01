@@ -202,7 +202,7 @@ export default {
     position: bottom center
     repeat: no-repeat
     size: 80vh
-  height: 100vh
+  min-height: 100vh
   overflow: hidden
   position: relative
 
@@ -239,6 +239,22 @@ export default {
         bottom: 100px
         left: 50%
         z-index: -1
+
+@media($smallDevices)
+  #start
+    padding-top: 200px
+    padding-bottom: 4rem
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(255,255,255,.6)
+    h1
+      font-size: 2.4rem
 
 @media($laptop)
   #start

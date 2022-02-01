@@ -26,6 +26,7 @@ export default {
 
 <style lang="sass">
 .work-item
+  margin-bottom: 2rem
   @media($laptop)
     &:nth-of-type(2)
       margin-top: 300px
@@ -46,7 +47,8 @@ export default {
       right: 0
       bottom: 0
       opacity: 0
-      background: rgba(0,0,0,0.9)
+      background: rgba(255,255,255,0.5)
+      backdrop-filter: blur(5px)
       transition: opacity .3s ease
 
       display: flex
@@ -54,7 +56,7 @@ export default {
       align-items: center
 
       a
-        color: $white
+        color: $black
 
     figure
       @media($laptop)

@@ -16,6 +16,10 @@
             color="red"
           ></section-headline>
           <p class="text-larg">8 Jahre Erfahrung im Konzipieren und Umsetzen von responsiven Websites für Unternehmen unterschiedlichster Größe. Zur Zeit beschäftige mich mit der Entwicklung von reaktiven Javascript Anwendungen mit <strong>Vue.js</strong> und <strong>Nuxt.js</strong> und serverseitigen Anwendungen mit <strong>Node.js</strong></p>
+          <a
+            download
+            href="/Lebenslauf.pdf"
+          >Lebenslauf Download</a>
         </div>
 
         <div class="col-xs-12 col-lg-6">
@@ -74,7 +78,7 @@ export default {
         {
           id: "designer-entwickler-köpu",
           title: "Designer & Frontend Entwickler KÖNIGSPUNKT",
-          time: "01/2013 - 09/2017",
+          time: "09/2016 - 09/2017",
           description:
             "Konzeption, Gestaltung, Umsetzung und Betreuung von Firmenwebsites und E-Mail Newslettern",
         },
@@ -97,6 +101,9 @@ export default {
 <style lang="sass">
 .about
   padding: 12rem 0
+  @media($smallDevices)
+    padding: 4rem 0
+    padding-top: 0
 
 .text-large
   font-size: 2rem
@@ -104,6 +111,10 @@ export default {
   @media(min-width: 769px)
     font-size: 2.4rem
     line-height: 1.8
+
+a
+  color: inherit
+  font-weight: bold
 
 h2
   @media(max-width: 768px)
