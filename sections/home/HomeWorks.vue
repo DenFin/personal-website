@@ -71,7 +71,7 @@ export default {
   mounted() {
     this.parallax();
   },
-  async created() {
+  async mounted() {
     this.works = await axios.get(
       "https://www.dennisfink.de/dennisfink.de/wp-json/wp/v2/projekte?order=asc"
     );

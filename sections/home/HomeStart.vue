@@ -11,7 +11,7 @@
             <h1>
               Als ausgebildeter <span class="text-red">Mediengestalter</span> und autodidaktischer <span class="text-turqoise">Programmierer</span> entwickle ich moderne Websites und Apps.
             </h1>
-            <p>Neben den üblichen Verdächtigen HTML, CSS und Javascript arbeite ich gerne mit Vue.js und Nuxt.js. Das Erlernen von neuen Technologien reizt mich auch nach fast 10 Jahren Erfahrung imer noch.</p>
+            <p>Neben den üblichen Verdächtigen HTML, CSS und Javascript arbeite ich gerne mit Vue.js und Nuxt.js. Das Erlernen von neuen Technologien reizt mich auch nach fast 10 Jahren Erfahrung immer noch.</p>
             <nuxt-link
               class="link"
               to="/#about"

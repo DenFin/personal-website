@@ -6,20 +6,23 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <section-headline
-            headline="Über mich"
-            color="red"
-          ></section-headline>
+
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-lg-6">
-
+          <section-headline
+            headline="Über mich"
+            color="red"
+          ></section-headline>
           <p class="text-larg">8 Jahre Erfahrung im Konzipieren und Umsetzen von responsiven Websites für Unternehmen unterschiedlichster Größe. Zur Zeit beschäftige mich mit der Entwicklung von reaktiven Javascript Anwendungen mit <strong>Vue.js</strong> und <strong>Nuxt.js</strong> und serverseitigen Anwendungen mit <strong>Node.js</strong></p>
         </div>
 
         <div class="col-xs-12 col-lg-6">
-          <h2>Stationen der letzten Jahre</h2>
+          <section-headline
+            headline="Stationen der letzten Jahre"
+            color="turqoise"
+          ></section-headline>
           <base-milestone
             v-for="milestone in milestones"
             v-bind:key="milestone.id"

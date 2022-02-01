@@ -15,8 +15,8 @@
                 aria-label="Main Menu"
               >
                 <svg
-                  width="50"
-                  height="50"
+                  width="40"
+                  height="40"
                   viewBox="0 0 100 100"
                 >
                   <path
@@ -61,7 +61,7 @@ export default {
     flex-direction: row
 .site-title
   color: inherit
-  font-size: 2.4rem
+  // font-size: 2.4rem
   text-decoration: none
 
 .hamburger
@@ -72,41 +72,42 @@ export default {
   padding: 0
   position: relative
   z-index: 999
+  top: -10px
 
   svg
-    width: 50px
+    width: 40px
 
 .line
   fill: none
   stroke: black
-  stroke-width: 6
+  stroke-width: 4
   transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .line1
   stroke-dasharray: 60 207
-  stroke-width: 6
+  stroke-width: 4
 
 .line2
   stroke-dasharray: 60 60
-  stroke-width: 6
+  stroke-width: 4
 
 .line3
   stroke-dasharray: 60 207
-  stroke-width: 6
+  stroke-width: 4
 
 .opened
   .line1
     stroke-dasharray: 90 207
     stroke-dashoffset: -134
-    stroke-width: 6
+    stroke-width: 4
 
   .line2
     stroke-dasharray: 1 60
     stroke-dashoffset: -30
-    stroke-width: 6
+    stroke-width: 4
 
   .line3
     stroke-dasharray: 90 207
     stroke-dashoffset: -134
-    stroke-width: 6
+    stroke-width: 4
 </style>

@@ -1,31 +1,37 @@
 <template>
   <div class="col-xs-12 col-lg-6 work-item">
-    <figure v-if="work.ACF.image" >
-      <img :src="work.ACF.image.url" :alt="work.ACF.image.alt">
+    <figure v-if="work.ACF.image">
+      <img
+        :src="work.ACF.image.url"
+        :alt="work.ACF.image.alt"
+      >
       <div class="work-item__overlay">
-        <a target="_blank" :href="work.ACF.link">Zur Website</a>
+        <a
+          target="_blank"
+          :href="work.ACF.link"
+        >Zur Website</a>
       </div>
-      </figure>
-      <h3>{{ work.title.rendered }}</h3>
-      <p>{{work.beschreibung }}</p>
-    </div>
+    </figure>
+    <h3>{{ work.title.rendered }}</h3>
+    <p>{{work.beschreibung }}</p>
+  </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['work']
-}
+  props: ["work"],
+};
 </script>
 
 <style lang="sass">
 .work-item
-    @media($laptop)   
-      &:nth-of-type(2)
-          margin-top: 300px
-      &:nth-of-type(3)
-          margin-top: -200px
-          margin-left: 200px
+  @media($laptop)
+    &:nth-of-type(2)
+      margin-top: 300px
+    &:nth-of-type(3)
+      margin-top: -200px
+          // margin-left: 200px
 
     figure
       position: relative
@@ -51,14 +57,13 @@ export default {
         color: $white
 
     figure
-        @media($laptop) 
-          max-width: 500px
-          height: 500px
+      @media($laptop)
+        max-width: 500px
+        height: 500px
     img
-        object-fit: cover
-        height: 100%
-    
-    h3
-        margin-bottom: 0
+      object-fit: cover
+      height: 100%
 
+    h3
+      margin-bottom: 0
 </style>

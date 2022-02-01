@@ -64,6 +64,7 @@ export default {
     color: #000
     font-weight: 700
   .arrow
+    display: none
     position: absolute
     right: 10%
     bottom: 0

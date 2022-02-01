@@ -56,18 +56,18 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.row
-  display: block
-  @media($laptop)
+// .row
+//   // display: block
+//   // @media($laptop)
 
-    &:nth-of-type(2)
-      margin-left: 15%
+// //     &:nth-of-type(2)
+// //       margin-left: 15%
 
-.col-xs-12
-  &:nth-of-type(1)
-    margin-left: auto
-    margin-right: 15%
+// // .col-xs-12
+// //   &:nth-of-type(1)
+// //     margin-left: auto
+// //     margin-right: 15%
 
-  &:nth-of-type(3)
-    margin: 0 auto
+// //   &:nth-of-type(3)
+// //     margin: 0 auto
 </style>
